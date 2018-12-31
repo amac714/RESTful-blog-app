@@ -1,0 +1,103 @@
+@import './base';
+@import './settings';
+
+.display-container {
+  margin: 0 auto;
+  max-width: 80rem;
+  padding: 0 $m-size;
+  border: none;
+
+  .post-container {
+    padding: 0 $m-size $s-size;
+    margin-bottom: $l-size;
+    border: 1px solid black;
+
+    .button {
+      background: #888;
+      line-height: 0;
+      padding: $s-size;
+      // border: none;
+      color: #fff;
+      font-size: $font-size-large;
+      font-weight: 300;
+      text-decoration: none;
+      float: right;
+    }
+
+    .edit-button {
+      background: lightcoral;
+      color: #fff;
+      font-size: $font-size-large;
+      font-weight: 300;
+      text-decoration: none;
+      padding: 0 $s-size 0;
+    }
+  }
+
+  .create-button {
+    background-color: $blue;
+    //border: none;
+    color: #fff;
+    display: inline-block;
+    font-size: $font-size-large;
+    font-weight: 300;
+    line-height: 1;
+    padding: $s-size;
+    text-decoration: none;
+    margin-bottom: $s-size;
+
+  }
+
+}
+
+.create-header, .edit-header {
+  background: $off-white;
+  margin-bottom: $l-size;
+  padding: $m-size 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  > * {
+    margin-bottom: $m-size;
+  }
+}
+
+.text-input {
+  border: 1px solid #cacccd;
+  height: 50px;
+  font-size: $font-size-large;
+  font-weight: 300;
+  padding: $s-size;
+}
+
+
+.textarea {
+  @extend .text-input;
+  height: 10rem;
+}
+
+.header {
+  background: $dark-blue;
+  // margin-bottom: $l-size;
+}
+
+.header__content {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: $s-size 0;  
+}
+
+.header__title {
+  color: white;
+  text-decoration: none;
+  h1 {
+    margin: 0;
+  }
+}
+
+.entry {
+  margin-top: $l-size;
+}
