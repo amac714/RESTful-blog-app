@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import { Header } from './header';
 
 class DisplayPosts extends Component {
   constructor() {
@@ -63,7 +62,6 @@ class DisplayPosts extends Component {
     const { posts } = this.state;
     return (
       <div>
-        <Header />
         <div className="display-container">
           <div className="entry">
             <Link className="create-button" to="/add">Create Entry</Link>

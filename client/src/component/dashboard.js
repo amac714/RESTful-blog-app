@@ -1,10 +1,10 @@
 import React from 'react';
 import DisplayPosts from './displayPosts';
-// import CreatePost from './createPost';
-// import EditPost from './editPost';
+import { Header } from './header';
 
 const Dashboard = () => (
   <div>
+    <Header />
     <DisplayPosts />
   </div>
 );
